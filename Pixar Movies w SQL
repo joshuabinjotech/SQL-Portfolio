@@ -1,0 +1,27 @@
+Create Table Movies
+  (ID INT PRIMARY KEY,
+   Title VARCHAR(50),
+   Director VARCHAR(50),
+   Year INT,
+   Length_minutes INT) ;
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO movies Values
+(6, 'The Incredibles', 'Brad Bird', 2004, 116)
+(7,'Cars', 'John Lasseter', 2006, 117)
+(8, 'Ratatouille', 'Brad Bird', 2007, 115)
+(9, 'Wall-E', 'Andrew Stanton', 2008, 104)
+(10, 'UP', 'Peter Docter', 2009, 101)
+(11, 'Toy Story 3', 'Lee Unkrich', 2010, 103)
+(12, 'Cars 2', 'John Lasseter', 2012, 102)
+(13, 'Brave', 'Andrew stanton', 2013, 110)
+(14, 'Monsters University', 'Dan Schalon', 2013, 102);
