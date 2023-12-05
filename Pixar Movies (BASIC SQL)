@@ -26,6 +26,11 @@ INSERT INTO movies Values
 (13, 'Brave', 'Andrew stanton', 2013, 110)
 (14, 'Monsters University', 'Dan Schalon', 2013, 102);
 
+create table Boxoffice
+(Movie_ID INT,
+Rating DECIMAL,
+Domestic_sales INT,
+International_sales INT)
 
 
 
