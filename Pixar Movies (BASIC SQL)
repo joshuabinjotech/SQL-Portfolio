@@ -36,43 +36,6 @@ International_sales INT)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ****List all directors of Pixar movies (alphabetically), without duplicates ****
 SELECT DISTINCT director FROM movies
 order by director asc ;
@@ -92,3 +55,28 @@ SELECT title, year FROM movies
 order by title asc
 LIMIT 5 
 OFFSET 5;
+
+
+
+***************JOINS***************
+
+****List all the movies by their ratings in descending order****
+
+SELECT title, rating FROM movies
+JOIN Boxoffice
+ON movies.id = Boxoffice.Movie_id 
+order by Rating Desc ;
+
+Show the sales numbers for each movie that did better internationally rather than domestically 
+
+SELECT title, Domestic_sales, International_sales
+FROM Movies
+JOIN Boxoffice
+ON Movies.id = Boxoffice.Movie_id
+WHERE International_sales > Domestic_ sales ;
+
+****Find the domestic and international sales for each movie****
+SELECT title, Domestic_sales, International_sales
+FROM Movies
+JOIN Boxoffice
+ON Movies.id = Boxoffice.Movie_id ;
