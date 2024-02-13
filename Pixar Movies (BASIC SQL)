@@ -6,15 +6,6 @@ Create Table Movies
    Length_minutes INT) ;
 
 
-
-test
-
-
-
-
-
-
-
 INSERT INTO movies Values
 (6, 'The Incredibles', 'Brad Bird', 2004, 116)
 (7,'Cars', 'John Lasseter', 2006, 117)
@@ -56,12 +47,24 @@ order by title asc
 LIMIT 5 
 OFFSET 5;
 
+*****Find the number of movies each director has directed*****
+SELECT count(title),director 
+FROM movies
+group by director;
+
 
 
 ***************JOINS***************
 
-****List all the movies by their ratings in descending order****
+****Find the total domestic and international sales that can be attributed to each director**** 
+select sum(domestic_sales+international_sales), director
+from Movies m
+left join boxoffice b
+on m.id = b.movie_id
+group by director
 
+
+****List all the movies by their ratings in descending order****
 SELECT title, rating FROM movies
 JOIN Boxoffice
 ON movies.id = Boxoffice.Movie_id 
@@ -80,3 +83,6 @@ SELECT title, Domestic_sales, International_sales
 FROM Movies
 JOIN Boxoffice
 ON Movies.id = Boxoffice.Movie_id ;
+
+
+
