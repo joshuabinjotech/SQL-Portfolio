@@ -7,6 +7,11 @@ Create Table Movies
 
 
 INSERT INTO movies Values
+(1, 'Toy Story', 'John Lasseter', 1995, 81),
+(2	'A Bug's Life', 'John Lasseter', 1998, 95),
+(3, 'Toy Story 2', 'John Lasseter', 1999, 93)
+(4, 'Monsters Inc.', 'Pete Docter', 2001, 92),
+(5, Finding Nemo, Andrew Stanton, 2003, 107)
 (6, 'The Incredibles', 'Brad Bird', 2004, 116)
 (7,'Cars', 'John Lasseter', 2006, 117)
 (8, 'Ratatouille', 'Brad Bird', 2007, 115)
@@ -23,9 +28,20 @@ Rating DECIMAL,
 Domestic_sales INT,
 International_sales INT)
 
-
-
-
+Insert into Boxoffice values
+(5, 8, 380843261, 555900000),
+(14, 7, 268492764, 475066843),
+(12, 6, 191452396, 368400000),
+(3, 8, 245852179, 239163000),
+(6, 8, 261441092, 370001000),
+(9, 9, 223808164, 297503696),
+(11, 8, 415004880, 648167031),
+(1, 8, 191796233, 170162503),
+(7, 7, 244082982, 217900167),
+(10, 8, 293004164, 438338580),
+(4, 8,289916256, 72900000),
+(2, 7, 162798565, 200600000),
+(13, 7, 237283207, 301700000),
 
 ****List all directors of Pixar movies (alphabetically), without duplicates ****
 SELECT DISTINCT director FROM movies
