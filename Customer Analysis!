@@ -19,3 +19,10 @@ Amount INT,
 Customer_id int,
 FOREIGN KEY(Customer_id) REFERENCES Customers(Customer_id)
 )
+
+Insert into Orders Values
+(1, 'Keyboard', 400, 4),
+(2, 'Mouse', 300, 4),
+(3, 'Monitor', 12000, 3),
+(4, 'Keyboard', 400, 1),
+(5, 'Mousepad', 250, 2)
