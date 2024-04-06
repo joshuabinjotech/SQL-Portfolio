@@ -11,3 +11,11 @@ Insert Into Customers VALUES
 (3, 'David', 'Robinson', 22, 'UK'),
 (4, 'John', 'Reinhardt', 25, 'UK'),
 (5, 'Betty', 'Doe', 28, 'UAE')
+
+Create Table Orders (
+Order_id int PRIMARY KEY,
+Item VARCHAR(100),
+Amount INT,
+Customer_id int,
+FOREIGN KEY(Customer_id) REFERENCES Customers(Customer_id)
+)
