@@ -33,3 +33,9 @@ Status Varchar(100),
 Customer Int,
 Foreign Key(Customer) References Customers(Customer_id)
 )
+Insert into Shippings Values
+(1, 'Pending', 2),
+(2, 'Pending', 4),
+(3, 'Delivered', 3),
+(4, 'Pending', 5),
+(5, 'Delivered', 1)
