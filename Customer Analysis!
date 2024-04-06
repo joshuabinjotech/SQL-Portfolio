@@ -26,3 +26,10 @@ Insert into Orders Values
 (3, 'Monitor', 12000, 3),
 (4, 'Keyboard', 400, 1),
 (5, 'Mousepad', 250, 2)
+
+Create Table Shippings (
+Shipping_id int,
+Status Varchar(100),
+Customer Int,
+Foreign Key(Customer) References Customers(Customer_id)
+)
