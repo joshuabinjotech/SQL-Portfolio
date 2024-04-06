@@ -39,3 +39,60 @@ Insert into Shippings Values
 (3, 'Delivered', 3),
 (4, 'Pending', 5),
 (5, 'Delivered', 1)
+
+*****Create a query which asks for all customers/records named ‘John’ from the ‘Customers’ table.****
+SELECT * FROM Customers
+WHERE first_name ='John'
+
+*****Create a query to return all the columns from this table for only customers in the UK who are 22 years old.***** 
+SELECT * FROM Customers
+WHERE country = 'UK' and Age =22
+
+
+*****Generate a report which displays all customers ordered in ascending order by age.****
+Select * FROM customers
+order by age Asc
+
+
+*****Create an inner join which returns Customer’s First Name and Amount Spent On An Order. This should be joined at Order ID and Customer ID.*****
+SELECT C.customer_id, C.first_name, O.amount
+FROM Customers C
+JOIN Orders O
+ON C.Customer_id= O.customer
+
+******Add an entry to the Customers database with Boris Johnson as a customer. You should insert an ID with his first name, surname, age and country.***** 
+INSERT INTO Customer VALUES
+(6, 'Boris', 'Johnson', 50, 'UK')
+  
+
+******Delete the row you have added to the database with Boris Johnson's details.*****
+DELETE FROM Customers
+WHERE last_name = 'Johnson'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
