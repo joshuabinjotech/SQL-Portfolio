@@ -1,0 +1,13 @@
+Create Table Customers (
+Customer_id  int PRIMARY KEY,
+First_name Varchar(100),
+Last_name Varchar(100),
+age int,
+Country Varchar(100) )
+
+Insert Into Customers VALUES
+(1, 'John', 'Doe', 31, 'USA'),
+(2, 'Robert', 'Luna', 22, 'USA'),
+(3, 'David', 'Robinson', 22, 'UK'),
+(4, 'John', 'Reinhardt', 25, 'UK'),
+(5, 'Betty', 'Doe', 28, 'UAE')
