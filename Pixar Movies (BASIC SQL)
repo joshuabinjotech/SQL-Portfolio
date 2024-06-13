@@ -102,3 +102,9 @@ ON Movies.id = Boxoffice.Movie_id ;
 
 
 
+
+*********************** MORE COMPLICATED QUERIES**************************
+
+
+
+
