@@ -1,1 +1,17 @@
+CREATE Table Buildings (
+Building_name Varchar(100) PRIMARY KEY,
+Capacity(INT) )
 
+CREATE TABLE Employees (
+Role Varchar(100),
+name Varchar(100),
+building vaechar(100),
+years_employed (INT),
+FOREIGN KEY building REFERENCES Buildings(Building_name)
+)
+
+INSERT INTO Buildings VALUES
+('1e', 24),
+('1w', 32),
+('2e', 16),
+('2w', 20)
